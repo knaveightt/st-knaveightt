@@ -1,0 +1,9 @@
+boxdraw
+defaultfontsize
+font2
+scrollback (just first patch for shift+PageUp/PageDown
+colorscheme from terminal.sexy
+
+manual changes:
+ - change terminal font to be Inconsolata Nerd Font 
+   (github.com/ryanoasis/nerd-fonts)
