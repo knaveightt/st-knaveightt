@@ -36,4 +36,4 @@ package() {
 }
 
 md5sums=('SKIP'
-         'b6db8084fcb673cb1e96eb42259b4523')
+         '497bcbc83d91b7977bea9fd59fda2e94')

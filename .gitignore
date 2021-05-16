@@ -1,2 +1,3 @@
 patches-prev
 patching/st*
+*.pkg.tar.zst

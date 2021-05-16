@@ -7,3 +7,4 @@ colorscheme from terminal.sexy
 manual changes:
  - change terminal font to be Inconsolata Nerd Font 
    (github.com/ryanoasis/nerd-fonts)
+ - made default terminal shell "zsh"

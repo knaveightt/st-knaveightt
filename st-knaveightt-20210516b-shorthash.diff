@@ -1,18 +1,18 @@
-From a452aab2a04cc36d859b2bddd44f23bf2b35dc54 Mon Sep 17 00:00:00 2001
+From 24283aa3ff17dd01fe4f5337d2c39a0afde57458 Mon Sep 17 00:00:00 2001
 From: knaveightt <johnosinski80@gmail.com>
-Date: Sun, 16 May 2021 12:00:13 -0400
+Date: Sun, 16 May 2021 14:38:28 -0400
 Subject: [PATCH] st-knaveightt merging patch changes
 
 ---
  Makefile       |   3 +-
  boxdraw.c      | 194 ++++++++++++++++++++++++++++++++++++++++++++
  boxdraw_data.h | 214 +++++++++++++++++++++++++++++++++++++++++++++++++
- config.def.h   |  87 +++++++++++++++++---
+ config.def.h   |  89 +++++++++++++++++---
  st.1           |   8 ++
  st.c           | 128 ++++++++++++++++++++++-------
  st.h           |  12 +++
  x.c            | 130 ++++++++++++++++++++++++++++--
- 8 files changed, 731 insertions(+), 45 deletions(-)
+ 8 files changed, 732 insertions(+), 46 deletions(-)
  create mode 100644 boxdraw.c
  create mode 100644 boxdraw_data.h
 
@@ -458,7 +458,7 @@ index 0000000..7890500
 +	/* U+2571 - U+2573: unsupported (diagonals) */
 +};
 diff --git a/config.def.h b/config.def.h
-index 6f05dce..e616da7 100644
+index 6f05dce..db8e7e2 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -5,7 +5,13 @@
@@ -476,6 +476,15 @@ index 6f05dce..e616da7 100644
  static int borderpx = 2;
  
  /*
+@@ -16,7 +22,7 @@ static int borderpx = 2;
+  * 4: value of shell in /etc/passwd
+  * 5: value of shell in config.h
+  */
+-static char *shell = "/bin/sh";
++static char *shell = "/bin/zsh";
+ char *utmp = NULL;
+ /* scroll program: to enable use a string like "scroll" */
+ char *scroll = NULL;
 @@ -67,6 +73,18 @@ static unsigned int blinktimeout = 800;
   */
  static unsigned int cursorthickness = 2;
