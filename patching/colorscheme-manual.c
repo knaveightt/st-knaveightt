@@ -1,32 +1,76 @@
-/* Using Hybrid by W0ng @ terminal.sexy
+/* Using custom theme I'm naming "Chevronic", using terminal.sexy
  * Needed to remove 'static' from definition of defaultfg and defaultbg
  * As well as add a definition for defaultrcs */
+
+/* Suggested wallpaper
+https://www.wallpaperflare.com/black-and-orange-surface-digital-art-geometry-texture-dark-wallpaper-cqtw
+"Chevronic" import using XResources mode @ terminal.sexy
+
+! special
+*.foreground:   #bdbdbd
+*.background:   #0d0d0d
+*.cursorColor:  #bdbdbd
+
+! black
+*.color0:       #555555
+*.color8:       #888888
+
+! red
+*.color1:       #c44332
+*.color9:       #ee6352
+
+! green
+*.color2:       #c68641
+*.color10:      #dd3838
+
+! yellow
+*.color3:       #d06d32
+*.color11:      #fd8f5a
+
+! blue
+*.color4:       #690da8
+*.color12:      #b20fbd
+
+! magenta
+*.color5:       #744560
+*.color13:      #9e5e83
+
+! cyan
+*.color6:       #288e9c
+*.color14:      #36bed1
+
+! white
+*.color7:       #8b7d70
+*.color15:      #9f9f9f
+
+*/
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#282a2e", /* black   */
-  [1] = "#a54242", /* red     */
-  [2] = "#8c9440", /* green   */
-  [3] = "#de935f", /* yellow  */
-  [4] = "#5f819d", /* blue    */
-  [5] = "#85678f", /* magenta */
-  [6] = "#5e8d87", /* cyan    */
-  [7] = "#707880", /* white   */
+  [0] = "#555555", /* black   */
+  [1] = "#c44332", /* red     */
+  [2] = "#c68641", /* green   */
+  [3] = "#d06d32", /* yellow  */
+  [4] = "#690da8", /* blue    */
+  [5] = "#744560", /* magenta */
+  [6] = "#288e9c", /* cyan    */
+  [7] = "#8b7d70", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#373b41", /* black   */
-  [9]  = "#cc6666", /* red     */
-  [10] = "#b5bd68", /* green   */
-  [11] = "#f0c674", /* yellow  */
-  [12] = "#81a2be", /* blue    */
-  [13] = "#b294bb", /* magenta */
-  [14] = "#8abeb7", /* cyan    */
-  [15] = "#c5c8c6", /* white   */
+  [8]  = "#888888", /* black   */
+  [9]  = "#ee6352", /* red     */
+  [10] = "#dd3838", /* green   */
+  [11] = "#fd8f5a", /* yellow  */
+  [12] = "#b20fbd", /* blue    */
+  [13] = "#9e5e83", /* magenta */
+  [14] = "#36bed1", /* cyan    */
+  [15] = "#9f9f9f", /* white   */
 
   /* special colors */
-  [256] = "#1d1f21", /* background */
-  [257] = "#c5c8c6", /* foreground */
+  [256] = "#0d0d0d", /* background */
+  [257] = "#bdbdbd", /* foreground */
 };
 
 /*
@@ -45,3 +89,4 @@ static unsigned int defaultrcs = 257;
  */
 static unsigned int defaultitalic = 7;
 static unsigned int defaultunderline = 7;
+
