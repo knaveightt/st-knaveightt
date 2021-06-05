@@ -2,6 +2,7 @@ boxdraw
 defaultfontsize
 font2
 scrollback (just first patch for shift+PageUp/PageDown
+anysize
 colorscheme from terminal.sexy
 
 manual changes:

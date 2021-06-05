@@ -10,13 +10,13 @@ depends=()
 makedepends=(git make)
 optdepends=()
 provides=(st)
-source=("git+$url" "st-knaveightt-20210519-shorthash.diff")
+source=("git+$url" "st-knaveightt-20210605-shorthash.diff")
 md5sums=(SKIP)
 
 prepare() {
 	cd st
 	#patch -p1 -i "$srcdir/$pkgname-$pkgver.patch"
-	git am "$srcdir/st-knaveightt-20210519-shorthash.diff"
+	git am "$srcdir/st-knaveightt-20210605-shorthash.diff"
 }
 
 #build() {
@@ -36,4 +36,4 @@ package() {
 }
 
 md5sums=('SKIP'
-         '266ab7745052cb9f39cef803c7d1c389')
+         '2d594cb575405fc73634d4354662faf1')
