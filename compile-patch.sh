@@ -12,11 +12,11 @@ git commit -m "st-knaveightt merging patch changes"
 
 # make changes here as needed
 echo "Creating Patch diff file..."
-git format-patch --stdout HEAD^ > st-knaveightt-20210519-shorthash.diff
+git format-patch --stdout HEAD^ > st-knaveightt-20210929-shorthash.diff
 
 # make changes here as needed
 echo "copying created diff up the directory tree..."
 cd ../../
-cp patching/st/st-knaveightt-20210519-shorthash.diff .
+cp patching/st/st-knaveightt-20210929-shorthash.diff .
 
 echo "Ended."

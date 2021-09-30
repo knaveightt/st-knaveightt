@@ -8,3 +8,6 @@ The patching directory is what I use to create my git formatted patch file, pull
 
 I created a compile-patch script which I will build out into a make file to handle the processess automatically at some point.
   
+## Other Important Comands
+Go back 1 commit on a git directory using "git reset HEAD^"
+Regenerate PKGBUILD checksums with "makepkg -g >> PKGBUILD"

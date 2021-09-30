@@ -1,11 +1,12 @@
+Installed Patches:
+xresources
+ - needed to ensure the colornames struct had up to 258 entries
+ - and that the default foreground/background/cursor/boldcursor values were mapped correctly
 boxdraw
 defaultfontsize
-font2
-scrollback (just first patch for shift+PageUp/PageDown
 anysize
-colorscheme from terminal.sexy
+scrollback (just first patch for shift+PageUp/PageDown
 
 manual changes:
  - change terminal font to be Inconsolata Nerd Font 
    (github.com/ryanoasis/nerd-fonts)
- - made default terminal shell "zsh"
